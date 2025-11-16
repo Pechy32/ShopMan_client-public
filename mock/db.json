@@ -1,0 +1,259 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "name": "Tomáš",
+      "email": "tomas@example.com",
+      "passwordHash": "tomas",
+      "createdAt": "2025-01-01T09:30:00Z"
+    },
+    {
+      "id": "user2",
+      "name": "Jana",
+      "email": "jana@example.com",
+      "passwordHash": "jana",
+      "createdAt": "2025-01-02T10:00:00Z"
+    },
+    {
+      "id": "user3",
+      "name": "Petr",
+      "email": "petr@example.com",
+      "passwordHash": "petr",
+      "createdAt": "2025-01-04T13:45:00Z"
+    },
+    {
+      "id": "user4",
+      "name": "Lojza",
+      "email": "lojza@example.com",
+      "passwordHash": "lojza",
+      "createdAt": "2025-11-14T07:09:49.853Z"
+    }
+  ],
+  "shoppingLists": [
+    {
+      "id": "list1",
+      "name": "Groceries",
+      "ownerId": "user1",
+      "membersIds": [
+        "user2",
+        "user3"
+      ],
+      "createdDate": "2025-02-01T11:00:00Z",
+      "updatedDate": "2025-11-16T11:05:10.793Z",
+      "isArchived": false,
+      "items": [
+        {
+          "id": "item1",
+          "name": "Milk",
+          "createdBy": "user1",
+          "solvedBy": "user4",
+          "createdByUser": {
+            "id": "user1",
+            "name": "Tomáš",
+            "email": "tomas@example.com",
+            "passwordHash": "tomas",
+            "createdAt": "2025-01-01T09:30:00Z"
+          },
+          "solvedByUser": {
+            "id": "user4",
+            "name": "Lojza",
+            "email": "lojza@example.com",
+            "passwordHash": "lojza",
+            "createdAt": "2025-11-14T07:09:49.853Z"
+          }
+        },
+        {
+          "id": "item2",
+          "name": "Eggs",
+          "createdBy": "user2",
+          "solvedBy": null,
+          "createdByUser": {
+            "id": "user2",
+            "name": "Jana",
+            "email": "jana@example.com",
+            "passwordHash": "jana",
+            "createdAt": "2025-01-02T10:00:00Z"
+          },
+          "solvedByUser": null
+        },
+        {
+          "id": "item3",
+          "name": "Bread",
+          "createdBy": "user1",
+          "solvedBy": null,
+          "createdByUser": {
+            "id": "user1",
+            "name": "Tomáš",
+            "email": "tomas@example.com",
+            "passwordHash": "tomas",
+            "createdAt": "2025-01-01T09:30:00Z"
+          },
+          "solvedByUser": null
+        },
+        {
+          "id": "item4",
+          "name": "Apple",
+          "createdBy": "user1",
+          "solvedBy": null,
+          "createdByUser": {
+            "id": "user1",
+            "name": "Tomáš",
+            "email": "tomas@example.com",
+            "passwordHash": "tomas",
+            "createdAt": "2025-01-01T09:30:00Z"
+          },
+          "solvedByUser": null
+        }
+      ],
+      "owner": {
+        "id": "user1",
+        "name": "Tomáš",
+        "email": "tomas@example.com",
+        "passwordHash": "tomas",
+        "createdAt": "2025-01-01T09:30:00Z"
+      },
+      "members": [
+        {
+          "id": "user2",
+          "name": "Jana",
+          "email": "jana@example.com",
+          "passwordHash": "jana",
+          "createdAt": "2025-01-02T10:00:00Z"
+        },
+        {
+          "id": "user3",
+          "name": "Petr",
+          "email": "petr@example.com",
+          "passwordHash": "petr",
+          "createdAt": "2025-01-04T13:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "list2",
+      "name": "Electronics",
+      "ownerId": "user2",
+      "membersIds": [
+        "user1",
+        "user3"
+      ],
+      "createdDate": "2025-02-02T14:00:00Z",
+      "updatedDate": "2025-02-04T18:00:00Z",
+      "isArchived": false,
+      "items": [
+        {
+          "id": "item1",
+          "name": "HDMI cable",
+          "createdBy": "user1",
+          "solvedBy": null
+        },
+        {
+          "id": "item2",
+          "name": "Mouse",
+          "createdBy": "user1",
+          "solvedBy": "user1"
+        }
+      ]
+    },
+    {
+      "id": "list3",
+      "name": "Camping",
+      "ownerId": "user3",
+      "membersIds": [],
+      "createdDate": "2025-01-10T10:00:00Z",
+      "updatedDate": "2025-01-20T09:15:00Z",
+      "isArchived": true,
+      "items": [
+        {
+          "id": "item1",
+          "name": "Tent",
+          "createdBy": "user3",
+          "solvedBy": "user3"
+        },
+        {
+          "id": "item2",
+          "name": "Sleeping bag",
+          "createdBy": "user3",
+          "solvedBy": null
+        },
+        {
+          "id": "item3",
+          "name": "Camping stove",
+          "createdBy": "user3",
+          "solvedBy": "user3"
+        }
+      ]
+    },
+    {
+      "id": "989e26c3-ad66-426a-980b-f7622eecb42c",
+      "name": "Lojzoviny",
+      "ownerId": "user4",
+      "membersIds": [
+        "user3"
+      ],
+      "createdDate": "2025-11-16T11:30:40.982Z",
+      "updatedDate": "2025-11-16T11:57:45.884Z",
+      "isArchived": false,
+      "items": [
+        {
+          "id": "21bc7548-f999-419d-aed9-81e227fd0bef",
+          "name": "Hruška",
+          "createdBy": "user4",
+          "solvedBy": null,
+          "createdByUser": {
+            "id": "user4",
+            "name": "Lojza",
+            "email": "lojza@example.com",
+            "passwordHash": "lojza",
+            "createdAt": "2025-11-14T07:09:49.853Z"
+          },
+          "solvedByUser": null
+        },
+        {
+          "id": "5abc6c61-8227-4116-9d76-321783ba9be3",
+          "name": "Švestka",
+          "createdBy": "user4",
+          "solvedBy": null,
+          "createdByUser": {
+            "id": "user4",
+            "name": "Lojza",
+            "email": "lojza@example.com",
+            "passwordHash": "lojza",
+            "createdAt": "2025-11-14T07:09:49.853Z"
+          },
+          "solvedByUser": null
+        },
+        {
+          "id": "2691251c-6a54-45b7-bb88-5f9f6c44ecc9",
+          "name": "kokos",
+          "createdBy": "user3",
+          "solvedBy": null,
+          "createdByUser": {
+            "id": "user3",
+            "name": "Petr",
+            "email": "petr@example.com",
+            "passwordHash": "petr",
+            "createdAt": "2025-01-04T13:45:00Z"
+          },
+          "solvedByUser": null
+        }
+      ],
+      "owner": {
+        "id": "user4",
+        "name": "Lojza",
+        "email": "lojza@example.com",
+        "passwordHash": "lojza",
+        "createdAt": "2025-11-14T07:09:49.853Z"
+      },
+      "members": [
+        {
+          "id": "user3",
+          "name": "Petr",
+          "email": "petr@example.com",
+          "passwordHash": "petr",
+          "createdAt": "2025-01-04T13:45:00Z"
+        }
+      ]
+    }
+  ]
+}
