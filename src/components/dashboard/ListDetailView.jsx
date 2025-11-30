@@ -12,6 +12,7 @@ import AddItemModal from "./AddItemModal";
 import MemberContainer from "../member/MemberContainer";
 import MemberControlPanel from "./MemberControlPanel";
 import AddMemberModal from "./AddMemberModal";
+import { formatDate } from "../utils/formatDate";
 
 
 
@@ -276,8 +277,8 @@ function ListDetailView() {
           <ListItem
             title={list.name}
             itemCount={list.items.length}
-            createdDate={list.createdDate}
-            updatedDate={list.updatedDate}
+            createdDate={formatDate(list.createdDate)}
+            updatedDate={formatDate(list.updatedDate)}
             ownerName={list.owner.name}
             membersNames={list.members.map(m => m.name)}
           />

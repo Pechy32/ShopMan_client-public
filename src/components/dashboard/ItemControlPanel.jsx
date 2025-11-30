@@ -5,7 +5,7 @@ import ShowSolvedItemNum from "../formControls/ShowSolvedItemNum";
 function ItemControlPanel({ showSolved, onToggleShowSolved, solvedCount, totalCount, onAddItemClick }) {
 
     return (
-        <div className="d-flex align-items-center justify-content-between p-3 border-top bg-light">
+        <div className="d-flex align-items-center justify-content-between p-3 bg-light">
             
            
                 <Checkbox

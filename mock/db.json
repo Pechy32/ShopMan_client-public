@@ -138,20 +138,71 @@
         "user3"
       ],
       "createdDate": "2025-02-02T14:00:00Z",
-      "updatedDate": "2025-02-04T18:00:00Z",
+      "updatedDate": "2025-11-27T13:46:20.189Z",
       "isArchived": false,
       "items": [
         {
           "id": "item1",
           "name": "HDMI cable",
           "createdBy": "user1",
-          "solvedBy": null
+          "solvedBy": null,
+          "createdByUser": {
+            "id": "user1",
+            "name": "Tomáš",
+            "email": "tomas@example.com",
+            "passwordHash": "tomas",
+            "createdAt": "2025-01-01T09:30:00Z"
+          },
+          "solvedByUser": null
         },
         {
           "id": "item2",
           "name": "Mouse",
           "createdBy": "user1",
-          "solvedBy": "user1"
+          "solvedBy": "user1",
+          "createdByUser": {
+            "id": "user1",
+            "name": "Tomáš",
+            "email": "tomas@example.com",
+            "passwordHash": "tomas",
+            "createdAt": "2025-01-01T09:30:00Z"
+          },
+          "solvedByUser": {
+            "id": "user1",
+            "name": "Tomáš",
+            "email": "tomas@example.com",
+            "passwordHash": "tomas",
+            "createdAt": "2025-01-01T09:30:00Z"
+          }
+        },
+        {
+          "id": "33a4f641-34d5-461b-af4c-14c064470019",
+          "name": "Komp",
+          "createdBy": "user1",
+          "solvedBy": null
+        }
+      ],
+      "owner": {
+        "id": "user2",
+        "name": "Jana",
+        "email": "jana@example.com",
+        "passwordHash": "jana",
+        "createdAt": "2025-01-02T10:00:00Z"
+      },
+      "members": [
+        {
+          "id": "user1",
+          "name": "Tomáš",
+          "email": "tomas@example.com",
+          "passwordHash": "tomas",
+          "createdAt": "2025-01-01T09:30:00Z"
+        },
+        {
+          "id": "user3",
+          "name": "Petr",
+          "email": "petr@example.com",
+          "passwordHash": "petr",
+          "createdAt": "2025-01-04T13:45:00Z"
         }
       ]
     },
@@ -192,7 +243,7 @@
         "user3"
       ],
       "createdDate": "2025-11-16T11:30:40.982Z",
-      "updatedDate": "2025-11-16T11:57:45.884Z",
+      "updatedDate": "2025-11-16T11:34:15.398Z",
       "isArchived": false,
       "items": [
         {
@@ -213,7 +264,7 @@
           "id": "5abc6c61-8227-4116-9d76-321783ba9be3",
           "name": "Švestka",
           "createdBy": "user4",
-          "solvedBy": null,
+          "solvedBy": "user3",
           "createdByUser": {
             "id": "user4",
             "name": "Lojza",
@@ -221,21 +272,19 @@
             "passwordHash": "lojza",
             "createdAt": "2025-11-14T07:09:49.853Z"
           },
-          "solvedByUser": null
-        },
-        {
-          "id": "2691251c-6a54-45b7-bb88-5f9f6c44ecc9",
-          "name": "kokos",
-          "createdBy": "user3",
-          "solvedBy": null,
-          "createdByUser": {
+          "solvedByUser": {
             "id": "user3",
             "name": "Petr",
             "email": "petr@example.com",
             "passwordHash": "petr",
             "createdAt": "2025-01-04T13:45:00Z"
-          },
-          "solvedByUser": null
+          }
+        },
+        {
+          "id": "2691251c-6a54-45b7-bb88-5f9f6c44ecc9",
+          "name": "kokos",
+          "createdBy": "user3",
+          "solvedBy": null
         }
       ],
       "owner": {

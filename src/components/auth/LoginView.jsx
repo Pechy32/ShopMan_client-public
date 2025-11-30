@@ -23,11 +23,8 @@ function LoginView() {
   };
 
   useEffect(() => {
-    if (!email.includes("@")) {
-      setEmailValid(false);
-    } else {
-      setEmailValid(true);
-    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    setEmailValid(emailRegex.test(email));
   }, [email]);
 
   return (

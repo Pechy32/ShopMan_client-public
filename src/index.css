@@ -2,3 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+.hoverable:hover{
+  background-color: #f8f9fa;
+}

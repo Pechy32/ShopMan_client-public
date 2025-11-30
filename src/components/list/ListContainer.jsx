@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import ListItem from "./ListItem";
+import { formatDate } from "../utils/formatDate";
 
 function ListContainer({ items, onSelect }) {
   return (
@@ -8,13 +9,14 @@ function ListContainer({ items, onSelect }) {
         <Fragment key={item.id}>
           <div
             style={{ cursor: "pointer", padding: "10px" }}
+            className="hoverable"
             onClick={() => onSelect(item)}
           >
             <ListItem
               title={item.name}
               itemCount={item.items.length}
-              createdDate={item.createdDate}
-              updatedDate={item.updatedDate}
+              createdDate={formatDate(item.createdDate)}
+              updatedDate={formatDate(item.updatedDate)}
               ownerName={item.owner.name}
               membersNames={item.members.map(m => m.name)}
               isArchived={item.isArchived}

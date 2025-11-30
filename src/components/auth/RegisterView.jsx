@@ -13,15 +13,18 @@ function RegisterView() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    if (!email.includes("@")) {
-      setEmailValid(false);
-    } else {
-      setEmailValid(true);
-    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    setEmailValid(emailRegex.test(email));
   }, [email]);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!name || !email || !password || !emailValid) {
+      setError("Please fill in all fields");
+      return;
+    }
 
     const res = await registerUser({
       name,
@@ -53,27 +56,26 @@ function RegisterView() {
         />
 
         <input
-          className={`form-control mb-2 ${emailValid ? "" : "is-invalid"}`}
+          className={`form-control mb-2`}
           placeholder="Email"
           value={email}
           onChange={e => setEmail(e.target.value)}
         />
-        {!emailValid && <div className="invalid-feedback">Email is not valid</div>}
-
+        
         <input
           className="form-control mb-3"
-          placeholder="Heslo"
+          placeholder="Password"
           type="password"
           value={password}
           onChange={e => setPassword(e.target.value)}
         />
 
-        <button className="btn btn-success w-100" disabled={!emailValid}>
-          Registrovat
+        <button className="btn btn-success w-100" disabled={!emailValid || !name || !password}>
+          Register
         </button>
 
         <button
-        type="button"
+          type="button"
           className="btn btn-link mt-3 w-100"
           onClick={() => navigate("/login")}
         >
